@@ -1,8 +1,8 @@
 # Maintainer: wilson <bugs@pandorica.net>
 
 pkgname=android-4.0
-pkgver=r01
-pkgrel=1
+pkgver=r03
+pkgrel=2
 pkgdesc='Platform for Google Android SDK'
 arch=('any')
 url="http://developer.android.com/sdk/index.html"
@@ -11,11 +11,11 @@ depends=('android-sdk>=r14')
 _sdk=android-sdk
 _platform="opt/${_sdk}/platforms"
 _android_ver=android-14
-_android_sub=1
+_android_sub=2
 
 source=("https://dl-ssl.google.com/android/repository/${_android_ver}_${pkgver}.zip")
 
-md5sums=('eaa78e221ff116ab6dfeb32c72df3b47')
+md5sums=('39b37689bfa06af76790d05ae0a754c2')
 
 package() {
   cd "${pkgdir}"
